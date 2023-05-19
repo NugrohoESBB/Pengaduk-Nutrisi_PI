@@ -1,5 +1,5 @@
 <?php
-require "asset/inc/config.php";
+require 'asset/inc/config.php';
 
 $sql2 = "SELECT timestamp FROM cobapost ORDER BY id DESC LIMIT 10";
 $result = $koneksi->query($sql2);

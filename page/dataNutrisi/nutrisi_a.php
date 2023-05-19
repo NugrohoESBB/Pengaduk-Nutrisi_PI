@@ -1,7 +1,7 @@
 <?php
 require 'asset/inc/config.php';
 
-$sql = "SELECT nutrisi_a FROM cobapost ORDER BY id DESC LIMIT 20";
+$sql = "SELECT nutrisi_a FROM cobapost ORDER BY id DESC LIMIT 10";
 $result = $koneksi->query($sql);
 
 // Buat array kosong untuk menampung data
