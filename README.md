@@ -1,10 +1,10 @@
 # Pengaduk-Nutrisi
 Run Website -> not available
 
-# Schematic
+# Schematic (not final yet)
 ![Wiring](https://github.com/NugrohoESBB/Pengaduk-Nutrisi_PI/blob/main/SchematicPengadukNutrisi.png)
 
-# Documentation
+# Documentation (not final yet)
 
 ## LCD 20x4 with I2C Pin Use to Arduino Uno
 
