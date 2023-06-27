@@ -2,8 +2,6 @@
     require "asset/inc/config.php";
     require 'page/dataNutrisi/nutrisi_a.php';
     require 'page/dataNutrisi/nutrisi_b.php';
-    require 'page/dataNutrisi/nutrisi_c.php';
-    require 'page/dataNutrisi/water.php';
     require 'page/dataNutrisi/dataywaktu.php';
     
     // Time
@@ -96,48 +94,7 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-xl-12 mb-4">
-                <div class="card card-collapsable">
-                    <a class="card-header" href="#collapseCardExampleGyroY" data-bs-toggle="collapse" role="button"
-                    aria-expanded="true" aria-controls="collapseCardExampleGyroY">Nutrisi C
-                    </a>
-                    <div class="collapse show" id="collapseCardExampleGyroY">
-                        <div class="container-fuild">
-                            <div class="row">
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="Cnutrisi" width="100%" height="40"></canvas>
-                                    </div>
-                                </div>
-                                <div class="card-footer large text-muted">Updated today at : <?= $timeZone; ?>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-12 mb-4">
-                <div class="card card-collapsable">
-                    <a class="card-header" href="#collapseCardExampleGyroZ" data-bs-toggle="collapse" role="button"
-                    aria-expanded="true" aria-controls="collapseCardExampleGyroZ">Water
-                    </a>
-                    <div class="collapse show" id="collapseCardExampleGyroZ">
-                        <div class="container-fuild">
-                            <div class="row">
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="WWater" width="100%" height="40"></canvas>
-                                    </div>
-                                </div>
-                                <div class="card-footer large text-muted">Updated today at : <?= $timeZone; ?>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
 
     <hr class="my-4">

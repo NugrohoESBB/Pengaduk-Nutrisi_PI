@@ -47,15 +47,13 @@ public function getDatas($id=0)
     public function insertData()
       {
          global $mysqli;
-         $arrcheckpost = array('nutrisi_a' => '', 'nutrisi_b' => '', 'nutrisi_c' => '', 'water' => '');
+         $arrcheckpost = array('nutrisi_a' => '', 'nutrisi_b' => '');
          $hitung = count(array_intersect_key($_POST, $arrcheckpost));
          if($hitung == count($arrcheckpost)){
           
                $result = mysqli_query($mysqli, "INSERT INTO cobapost SET
                nutrisi_a = '$_POST[nutrisi_a]',
                nutrisi_b = '$_POST[nutrisi_b]',
-               nutrisi_c = '$_POST[nutrisi_c]',
-               water = '$_POST[water]'");
                 
                if($result)
                {
@@ -84,15 +82,13 @@ public function getDatas($id=0)
  function updateData($id)
       {
          global $mysqli;
-         $arrcheckpost = array('nutrisi_a' => '', 'nutrisi_b' => '', 'nutrisi_c' => '', 'water' => '');
+         $arrcheckpost = array('nutrisi_a' => '', 'nutrisi_b' => '');
          $hitung = count(array_intersect_key($_POST, $arrcheckpost));
          if($hitung == count($arrcheckpost)){
           
               $result = mysqli_query($mysqli, "UPDATE cobapost SET
                nutrisi_a = '$_POST[nutrisi_a]',
                nutrisi_b = '$_POST[nutrisi_b]',
-               nutrisi_c = '$_POST[nutrisi_c]',
-               water = '$_POST[water]',
               WHERE id='$id'");
           
             if($result)

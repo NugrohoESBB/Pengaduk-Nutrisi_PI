@@ -8,8 +8,6 @@
                         <th width="3%" class="text-center">ID</th>
                         <th class="text-center">Nutrisi A</th>
                         <th class="text-center">Nutrisi B</th>
-                        <th class="text-center">Nutrisi C</th>
-                        <th class="text-center">Water</th>
                         <th class="text-center">Timestamp</th>
                     </tr>
                 </thead>
@@ -32,8 +30,6 @@
                             <td class="text-center"><?php echo "$no"; ?></td>
                             <td><?php echo $data['nutrisi_a']; ?></td>
                             <td><?php echo $data['nutrisi_b']; ?></td>
-                            <td><?php echo $data['nutrisi_c']; ?></td>
-                            <td><?php echo $data['water']; ?></td>
                             <td><?php echo $data['timestamp']; ?></td>
                         </tr>
                     <?php

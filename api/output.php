@@ -16,7 +16,7 @@ if(!$koneksi){
 try{
 // code here!
 
-$sql = 'SELECT id, nutrisi_a,nutrisi_b,nutrisi_c,water,timestamp FROM cobapost';
+$sql = 'SELECT id, nutrisi_a,nutrisi_b,timestamp FROM cobapost';
 // $row = $connection-> query($sql);
 $row = $koneksi->prepare($sql);
 $row->execute();
@@ -53,8 +53,6 @@ die('your Connection database is die!'. $e->getMessage());
       <th scope="col">id</th>
       <th scope="col">nutrisi_a</th>
       <th scope="col">nutrisi_b</th>
-      <th scope="col">nutrisi_c</th>
-      <th scope="col">water</th>
       <th scope="col">timestamp</th>
     </tr>
   </thead>
@@ -63,16 +61,12 @@ die('your Connection database is die!'. $e->getMessage());
   <?php $id = $rows['id'];
   $nutrisi_a = $rows['nutrisi_a'];
   $nutrisi_b = $rows['nutrisi_b'];
-  $nutrisi_c = $rows ['nutrisi_c'];
-  $water = $rows['water'];
   $timestamp = $rows['timestamp'];
 ?>
 <tr>
   <td><?php echo $id?></td>
  <td><?php echo $nutrisi_a?></td>
  <td><?php echo $nutrisi_b?></td>
- <td><?php echo $nutrisi_c?></td>
-  <td><?php echo $water?></td>
  <td><?php echo $timestamp?></td>
                                 
 </tr>

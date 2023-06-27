@@ -46,14 +46,6 @@
                         <label>Campuran Pupuk B</label>
                         <input type="text" name="nutrisiB" class="form-control" id="nutrisiB" placeholder="Masukkan Campuran Pupuk B." required autocomplete="off">
                     </div>
-                    <div class="form-group">
-                        <label>Campuran Pupuk C</label>
-                        <input type="text" name="nutrisiC" class="form-control" id="nutrisiC" placeholder="Masukkan Campuran Pupuk C." required autocomplete="off">
-                    </div>
-                    <div class="form-group">
-                        <label>Water</label>
-                        <input type="text" name="Water" class="form-control" id="Water" placeholder="Masukkan Air!. Example 1 liter" required autocomplete="off">
-                    </div>
                     <button type="submit" name="submit" class="btn btn-sm btn-primary">Submit</button>
                     <button type="cancel" name="cancel" class="btn btn-sm btn-secondary" onclick="history.back()">Cancel</button>
                 </form>

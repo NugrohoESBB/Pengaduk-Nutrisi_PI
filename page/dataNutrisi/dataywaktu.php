@@ -1,7 +1,7 @@
 <?php
 require 'asset/inc/config.php';
 
-$sql2 = "SELECT timestamp FROM cobapost ORDER BY id DESC LIMIT 10";
+$sql2 = "SELECT timestamp FROM cobapost ORDER BY id DESC LIMIT 7";
 $result = $koneksi->query($sql2);
 
 // Buat array kosong untuk menampung data
@@ -10,7 +10,8 @@ $data2 = array();
 // Looping untuk mengambil data dari hasil query
 while ($row = mysqli_fetch_assoc($result)) {
   // Konversi nilai timestamp ke dalam format waktu dengan string H:i:s
-  $waktu2 = date('H:i:s', strtotime($row['timestamp']));
+  // konversi nilai timestamp ke dalam format tanggal dengan string d:F:Y
+  $waktu2 = date('Y-m-d', strtotime($row['timestamp']));
   // Tambahkan nilai ke dalam array dengan format yang diinginkan
   $data2[] = "String('$waktu2')";
 }

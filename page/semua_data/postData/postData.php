@@ -9,10 +9,8 @@
         if (isset($_POST['submit'])) {
             $nutrisi_a = saring($_POST['nutrisi_a']);
             $nutrisi_b = saring($_POST['nutrisi_b']);
-            $nutrisi_c = saring($_POST['nutrisi_c']);
-            $water = saring($_POST['water']);
 
-            $result = mysqli_query($koneksi, "INSERT INTO cobapost(nutrisi_a,nutrisi_b,nutrisi_c, water) VALUES ('$nutrisi_a','$nutrisi_b','$nutrisi_c','$water')")
+            $result = mysqli_query($koneksi, "INSERT INTO cobapost(nutrisi_a,nutrisi_b) VALUES ('$nutrisi_a','$nutrisi_b')")
         }
     }   
     $koneksi = null;

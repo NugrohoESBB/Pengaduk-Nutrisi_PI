@@ -13,14 +13,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if($api_key == $api_key_value) {
         $nutrisi_a = saring($_POST["nutrisi_a"]);
         $nutrisi_b = saring($_POST["nutrisi_b"]);
-        $nutrisi_c = saring($_POST["nutrisi_c"]);
-        $water = saring($_POST["water"]);
 
         // Create connection
 
         try{        
             $koneksi->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "INSERT INTO cobapost (nutrisi_a, nutrisi_a, nutrisi_c, water)VALUES ('" . $nutrisi_a . "', '" . $nutrisi_b . "','" . $nutrisi_c . "','" . $water . "')";
+            $sql = "INSERT INTO cobapost (nutrisi_a, nutrisi_b)VALUES ('" . $nutrisi_a . "', '" . $nutrisi_b . "')";
             $koneksi->exec($sql);
         } catch(PDOException $e){
             echo $e->getMessage();
