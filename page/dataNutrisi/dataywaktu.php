@@ -10,7 +10,7 @@ $data2 = array();
 // Looping untuk mengambil data dari hasil query
 while ($row = mysqli_fetch_assoc($result)) {
   // Konversi nilai timestamp ke dalam format waktu dengan string H:i:s
-  // konversi nilai timestamp ke dalam format tanggal dengan string d:F:Y
+  // konversi nilai timestamp ke dalam format tanggal dengan string Y-m-d
   $waktu2 = date('Y-m-d', strtotime($row['timestamp']));
   // Tambahkan nilai ke dalam array dengan format yang diinginkan
   $data2[] = "String('$waktu2')";

@@ -6,7 +6,7 @@
     
     // Time
     date_default_timezone_set('Asia/Jakarta');
-    $timeZone = date('h:i:s');
+    $timeZone = date('H:i:s');
 ?>
 
 <style>
@@ -54,8 +54,7 @@
             <div class="col-xl-12 mb-4">
                 <div class="card card-collapsable">
                     <a class="card-header" href="#collapseCardExampleAccelZ" data-bs-toggle="collapse" role="button"
-                    aria-expanded="true" aria-controls="collapseCardExampleAccelZ">Nutrisi A
-                    </a>
+                    aria-expanded="true" aria-controls="collapseCardExampleAccelZ">Nutrisi A</a>
                     <div class="collapse show" id="collapseCardExampleAccelZ">
                         <div class="container-fuild">
                             <div class="row">
@@ -75,8 +74,7 @@
             <div class="col-xl-12 mb-4">
                 <div class="card card-collapsable">
                     <a class="card-header" href="#collapseCardExampleGyroX" data-bs-toggle="collapse" role="button"
-                    aria-expanded="true" aria-controls="collapseCardExampleGyroX">Nutrisi B
-                    </a>
+                    aria-expanded="true" aria-controls="collapseCardExampleGyroX">Nutrisi B</a>
                     <div class="collapse show" id="collapseCardExampleGyroX">
                         <div class="container-fuild">
                             <div class="row">

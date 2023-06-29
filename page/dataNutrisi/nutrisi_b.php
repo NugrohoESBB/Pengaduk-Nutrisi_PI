@@ -1,7 +1,7 @@
 <?php
 require 'asset/inc/config.php';
 
-$sql = "SELECT nutrisi_b FROM cobapost ORDER BY id DESC LIMIT 10";
+$sql = "SELECT nutrisi_b FROM cobapost ORDER BY id DESC LIMIT 7";
 $result = $koneksi->query($sql);
 
 // Buat array kosong untuk menampung data
@@ -10,7 +10,11 @@ $data = array();
 // Looping untuk mengambil data dari hasil query
 while ($row = mysqli_fetch_assoc($result)) {
   // Konversi nilai dari string ke integer
-  $nutrisi_a = intval($row['nutrisi_b']);
+  //$nutrisi_a = intval($row['nutrisi_b']);
+
+  // Konversi nilai dari string ke float
+  $nutrisi_a = floatval($row['nutrisi_b']);
+  
   // Tambahkan nilai ke dalam array
   $data[] = $nutrisi_a;
 }
